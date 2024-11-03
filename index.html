@@ -11,23 +11,36 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f8f9fa;
+      background-color: #f1f4f9;
+      margin: 0;
     }
     .construction-container {
       text-align: center;
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
       background-color: white;
+      max-width: 500px;
+      position: relative;
     }
     .construction-container h1 {
       font-size: 2.5rem;
       color: #17a2b8;
+      font-weight: bold;
       margin-bottom: 1rem;
     }
-    .construction-container p {
-      font-size: 1.2rem;
+    .construction-container h2 {
+      font-size: 1.5rem;
       color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    .construction-container p {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    .construction-image {
+      width: 100px;
       margin-bottom: 1.5rem;
     }
     .social-icons a {
@@ -45,19 +58,26 @@
       font-weight: bold;
       border: none;
       padding: 10px 20px;
+      border-radius: 25px;
       transition: background-color 0.3s;
     }
     .contact-btn:hover {
       background-color: #138496;
+    }
+    .footer-note {
+      font-size: 0.9rem;
+      color: #adb5bd;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
   <div class="construction-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965278.png" alt="Em construção" class="construction-image">
     <h1>Clínica Apice</h1>
     <h2>Estamos em construção!</h2>
-    <p>Nossa página está sendo construída para melhor atender você. Em breve, teremos novidades!</p>
+    <p>Nossa página está sendo preparada para melhor atender você. Em breve, teremos novidades!</p>
     
     <button class="contact-btn" onclick="window.location.href='mailto:contato@clinicopice.com.br'">Entre em contato</button>
     
@@ -65,6 +85,9 @@
       <a href="https://facebook.com/clinicopice" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://instagram.com/clinicopice" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://linkedin.com/company/clinicopice" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-note">
+      <p>&copy; 2024 Clínica Apice. Todos os direitos reservados.</p>
     </div>
   </div>
 
@@ -75,4 +98,3 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
