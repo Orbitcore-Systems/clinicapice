@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica de Psicologia</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Clínica Apice - Em Construção</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    .construction-container {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+    .construction-container h1 {
+      font-size: 2.5rem;
+      color: #17a2b8;
+      margin-bottom: 1rem;
+    }
+    .construction-container p {
+      font-size: 1.2rem;
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    .social-icons a {
+      color: #17a2b8;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #0d6efd;
+    }
+    .contact-btn {
+      background-color: #17a2b8;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+    .contact-btn:hover {
+      background-color: #138496;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Clínica de Psicologia</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="construction-container">
+    <h1>Clínica Pice</h1>
+    <h2>Estamos em construção!</h2>
+    <p>Nossa página está sendo construída para melhor atender você. Em breve, teremos novidades!</p>
+    
+    <button class="contact-btn" onclick="window.location.href='mailto:contato@clinicopice.com.br'">Entre em contato</button>
+    
+    <div class="social-icons mt-4">
+      <a href="https://facebook.com/clinicopice" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/clinicopice" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/company/clinicopice" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Bem-vindo à nossa clínica de psicologia. Aqui, trabalhamos para proporcionar o melhor suporte emocional e psicológico. Nossa missão é ajudar nossos pacientes a alcançarem bem-estar e equilíbrio emocional, oferecendo um espaço seguro e acolhedor.</p>
-        <p>Psicóloga: Dra. Maria Silva</p>
-        <p>CRP: 0000-00</p>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Terapia Individual</li>
-            <li>Terapia de Casal</li>
-            <li>Terapia Familiar</li>
-            <li>Orientação Vocacional</li>
-            <li>Atendimento Psicológico Online</li>
-        </ul>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para marcar uma consulta ou obter mais informações:</p>
-        <form action="enviar_contato.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Clínica de Psicologia. Todos os direitos reservados.</p>
-    </footer>
-
+  <!-- Bootstrap and FontAwesome scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
