@@ -627,7 +627,7 @@ textarea.form-control {
 
 /* Classe de fundo com cor azul transparente */
 .bg-blue-transparent { 
-  background-color: rgba(102, 153, 204, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .banner-section .logo-fa {  
