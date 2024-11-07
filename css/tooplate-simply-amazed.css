@@ -408,7 +408,7 @@ textarea.form-control {
   padding: 0;
 }
 
-.navbar .navbar-nav > .nav-item > a.nav-link.current { color: #99ccff; }
+.navbar .navbar-nav > .nav-item > a.nav-link.current { color: #ff1f87; }
 
 .navbar .navbar-nav > .nav-item > a.nav-link.dropdown-toggle::after {
   content: '';
@@ -615,9 +615,20 @@ textarea.form-control {
   background-color: #99ccff;
   padding-top: 121px;
   align-items: flex-start;
+
+  /* Configuração da imagem de fundo para ser responsiva */
+  background-image: url('img/section-1-bg.png');
+  background-size: cover;        /* Cobre o contêiner */
+  background-position: center;   /* Centraliza a imagem */
+  background-repeat: no-repeat;  /* Evita repetição */
+  width: 100%;                   /* Largura total */
+  min-height: 100vh;             /* Altura mínima da tela inteira */
 }
 
-.bg-blue-transparent { background-color: rgb(102 153 204 / 0.8); }
+/* Classe de fundo com cor azul transparente */
+.bg-blue-transparent { 
+  background-color: rgba(102, 153, 204, 0.8); 
+}
 
 .banner-section .logo-fa {  
   color: #fff;
@@ -630,14 +641,16 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-  .banner-section .logo-fa { margin: 0 auto 30px; }
+  .banner-section .logo-fa { 
+      margin: 0 auto 30px; 
+  }
 }
 
 @media (max-width: 767px) {
   .banner-section .logo-fa {
-    font-size: 28px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+      font-size: 28px;
+      padding-top: 20px;
+      padding-bottom: 15px;
   }
 }
 
@@ -650,8 +663,8 @@ textarea.form-control {
 
 @media (max-width: 767px) {
   .banner-section .logo-fa span {
-    font-size: 32px;
-    margin-bottom: 10px;
+      font-size: 32px;
+      margin-bottom: 10px;
   }
 }
 
@@ -664,11 +677,15 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-  .banner-section .simple { margin-left: 0; }
+  .banner-section .simple { 
+      margin-left: 0; 
+  }
 }
 
 @media (max-width: 767px) {
-  .banner-section .simple { padding: 16px 34px 17px 34px; }
+  .banner-section .simple { 
+      padding: 16px 34px 17px 34px; 
+  }
 }
 
 .banner-section .simple p {
@@ -677,12 +694,17 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-  .banner-section .simple p { font-size: 20px; }
+  .banner-section .simple p { 
+      font-size: 20px; 
+  }
 }
 
 @media (max-width: 575px) {
-  .banner-section .simple p { font-size: 18px; }
+  .banner-section .simple p { 
+      font-size: 18px; 
+  }
 }
+
 
 /* <<< Work Side >>> */
 .work-section {
