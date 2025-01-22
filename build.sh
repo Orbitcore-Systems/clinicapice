@@ -2,10 +2,10 @@
 
 VERSION=0
 MINOR=0
-PATCH=13
+PATCH=14
 EXTRAVERSION=""
 
-NOTES="update"
+NOTES="Trocado o template"
 BRANCH="main"
 
 if [[ -z $PATCH ]]; then
