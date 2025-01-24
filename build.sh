@@ -3,7 +3,7 @@
 VERSION=1
 MINOR=0
 PATCH=
-EXTRAVERSION="-rc2"
+EXTRAVERSION="-rc3"
 
 NOTES="Trocado o template"
 BRANCH="main"
