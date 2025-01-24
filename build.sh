@@ -3,9 +3,9 @@
 VERSION=1
 MINOR=0
 PATCH=
-EXTRAVERSION="-rc4"
+EXTRAVERSION="-rc5"
 
-NOTES="Trocado o template"
+NOTES="quase pronto"
 BRANCH="main"
 
 if [[ -z $PATCH ]]; then
