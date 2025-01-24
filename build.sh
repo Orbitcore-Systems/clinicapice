@@ -1,9 +1,9 @@
 #!/bin/bash
 
-VERSION=0
+VERSION=1
 MINOR=0
-PATCH=20
-EXTRAVERSION=""
+PATCH=
+EXTRAVERSION="-rc1"
 
 NOTES="Trocado o template"
 BRANCH="main"
