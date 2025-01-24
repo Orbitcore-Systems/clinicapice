@@ -2,7 +2,7 @@
 
 VERSION=0
 MINOR=0
-PATCH=17
+PATCH=18
 EXTRAVERSION=""
 
 NOTES="Trocado o template"
