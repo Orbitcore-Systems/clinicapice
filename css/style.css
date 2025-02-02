@@ -487,13 +487,17 @@ button {
     color: #ffffff;
     background-color: #ff5333;
 }
-.dancer_section{
+
+.dancer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/dancer-bg.png);
-    height: auto;
-    background-size: 100%;
+    background-image: url(../images/dancer-bg.png); /* Caminho da imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    height: auto; /* Altura automática */
+    /*opacity: 0.2; /* Define a transparência (0 = totalmente transparente, 1 = totalmente opaco) */
 }
+
 .ballet_text{
     width: 100%;
     float: left;
