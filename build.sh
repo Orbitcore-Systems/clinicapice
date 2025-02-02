@@ -3,7 +3,7 @@
 VERSION=1
 MINOR=0
 PATCH=
-EXTRAVERSION="-rc8"
+EXTRAVERSION="-rc9"
 
 NOTES="quase pronto"
 BRANCH="main"
