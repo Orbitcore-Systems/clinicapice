@@ -2,11 +2,11 @@
 
 VERSION=1
 MINOR=1
-PATCH=
-EXTRAVERSION="-rc1"
+PATCH=0
+EXTRAVERSION=""
 
-NOTES="dev navbar"
-BRANCH="navbar"
+NOTES="arrumado e melhorado o navbar, adicionado favicon em todas as paginas."
+BRANCH="main"
 
 set -e
 
