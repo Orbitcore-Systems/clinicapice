@@ -30,6 +30,35 @@ src: url("../fonts/BalooChettan-Regular.ttf");
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+
+
+
+.logo-navbar img {
+    height: 50px; /* Tamanho padrão */
+  }
+  
+@media (max-width: 760.98px) { /* Em telas menores que lg */
+.logo-navbar img {
+    height: 30px; /* Reduzir o tamanho em telas menores, se necessário */
+    }
+}
+
+
+.hover-border-primary:hover,
+.hover-border-primary:focus {
+    border-bottom-color: var(--bs-primary) !important; /* Use a cor primária do Bootstrap */
+}
+  
+.transition-border {
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+  
+.nav-link:focus {
+    outline: 2px solid var(--bs-primary); /* Adiciona um foco visível */
+    outline-offset: 2px;
+}
+
+
 * {
      box-sizing: border-box !important;
      transition: ease all 0.5s;

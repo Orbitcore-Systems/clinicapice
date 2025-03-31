@@ -1,12 +1,14 @@
 #!/bin/bash
 
 VERSION=1
-MINOR=0
+MINOR=1
 PATCH=
-EXTRAVERSION="-rc10"
+EXTRAVERSION="-rc1"
 
-NOTES="quase pronto"
-BRANCH="main"
+NOTES="dev navbar"
+BRANCH="navbar"
+
+set -e
 
 if [[ -z $PATCH ]]; then
     PATCH=""
