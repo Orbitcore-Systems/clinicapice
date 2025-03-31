@@ -2,10 +2,10 @@
 
 VERSION=1
 MINOR=1
-PATCH=0
+PATCH=1
 EXTRAVERSION=""
 
-NOTES="arrumado e melhorado o navbar, adicionado favicon em todas as paginas."
+NOTES="arrumado falha no hamburger do navbar que não estava responsivo."
 BRANCH="main"
 
 set -e
