@@ -1,11 +1,11 @@
 #!/bin/bash
 
 VERSION=1
-MINOR=1
-PATCH=1
+MINOR=2
+PATCH=0
 EXTRAVERSION=""
 
-NOTES="arrumado falha no hamburger do navbar que não estava responsivo."
+NOTES="Atualizado data e quem desenhou o site"
 BRANCH="main"
 
 set -e
