@@ -1,286 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <!-- basic -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- mobile metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <!-- site metas -->
-  <title>Home</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="author" content=""> 
-  <!-- bootstrap css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <!-- style css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- Responsive-->
-  <link rel="stylesheet" href="css/responsive.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Ápice | Neurologia, Psicologia e Neuropsicologia em Poços de Caldas</title>
+<meta name="description" content="Clínica Ápice: neurologia (cognitiva e cefaleias), psicoterapia e avaliação neuropsicológica. Atendimento clínico online e presencial em Poços de Caldas - MG.">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16303a; --teal:#1f7a76; --teal-d:#155b58; --mist:#eaf3f2; --lilac:#e7e4f3; --sky:#dcebf3;
+  --line:#cfe0de; --bg:#fbfdfc; --muted:#4d6670;
+  --serif:'Fraunces',Georgia,serif; --sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1100px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+p{max-width:62ch}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(251,253,252,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+.logo img{height:52px;display:block}
+nav ul{display:flex;gap:1.6rem;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem;padding:.4rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--teal)}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:600;padding:.85rem 1.5rem;border-radius:999px;transition:background .2s}
+.btn:hover{background:var(--teal-d)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.menu-btn{display:none;background:none;border:1.5px solid var(--ink);border-radius:8px;padding:.45rem .8rem;font:inherit;font-weight:600;cursor:pointer}
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+/* hero */
+.hero{background:linear-gradient(180deg,var(--mist),var(--bg));position:relative;overflow:hidden;padding-bottom:0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-bottom:1.2rem}
+.hero p{font-size:1.15rem;color:var(--muted);margin-bottom:2rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.areas{display:flex;flex-direction:column}
+.areas a{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;text-decoration:none;padding:1.1rem 0;border-top:1.5px solid var(--ink);font-family:var(--serif);font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:600;transition:padding .2s,color .2s}
+.areas a:last-child{border-bottom:1.5px solid var(--ink)}
+.areas a:hover{color:var(--teal);padding-left:.6rem}
+.areas small{font-family:var(--sans);font-weight:500;font-size:.85rem;color:var(--muted)}
+.peak{display:block;width:100%;height:auto;margin-top:3.5rem;color:var(--teal);opacity:.35}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <!-- fevicon -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <!-- Tweaks for older IEs-->
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.about p+p{margin-top:1rem}
+.services{list-style:none;padding:0;display:grid;gap:.7rem}
+.services li{padding:1rem 1.2rem 1rem 3rem;background:var(--mist);border-radius:12px;position:relative;font-weight:500}
+.services li::before{content:"";position:absolute;left:1.2rem;top:1.45rem;width:.9rem;height:.5rem;border-left:2.5px solid var(--teal);border-bottom:2.5px solid var(--teal);transform:rotate(-45deg)}
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <!-- owl stylesheets --> 
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-  <link href="https://fonts.googleapis.com/css2?family=Albert Sans:wght@500;700&display=swap" rel="stylesheet">
+/* specialties */
+.spec{background:var(--ink);color:#fff}
+.spec h2{color:#fff}
+.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.spec article{padding:1.8rem;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15)}
+.spec h3{font-size:1.5rem;margin-bottom:.6rem}
+.spec p{color:#d5e4e4;font-size:1rem}
+.spec .tag{display:inline-block;margin-top:1rem;font-size:.85rem;font-weight:600;color:#9fd8d3}
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+/* team */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+.card{border-radius:20px;padding:2rem}
+.card.a{background:var(--sky)} .card.b{background:var(--lilac)}
+.card h3{font-size:1.6rem;margin-bottom:.3rem}
+.role{font-weight:600;color:var(--teal-d)}
+.reg{font-size:.9rem;color:var(--muted);margin-bottom:1rem}
+.card p+p{margin-top:.8rem}
 
-  <link rel="manifest" href="site.webmanifest">
-  <link href="https://fonts.googleapis.com/css2?family=Albert Sans:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Albert Sans', sans-serif;
-    }
+/* hours */
+.hours{background:var(--mist)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.days{list-style:none;padding:0;background:#fff;border-radius:18px;border:1px solid var(--line);overflow:hidden}
+.days li{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 1.4rem;border-bottom:1px solid var(--line)}
+.days li:last-child{border-bottom:0}
+.days li.today{background:var(--teal);color:#fff;font-weight:600}
+.days li.off{color:var(--muted)}
 
-    .dance_text {
-    font-family: 'Albert Sans', sans-serif;
-    }
-  </style>
+/* location */
+.loc-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.5rem;align-items:stretch}
+.contact{display:grid;gap:1.2rem;margin-top:1.5rem;font-style:normal}
+.contact b{display:block;font-size:.85rem;color:var(--teal-d)}
+.contact a{text-decoration:none;font-weight:500}
+.contact a:hover{text-decoration:underline}
+iframe{width:100%;min-height:340px;height:100%;border:0;border-radius:20px;background:var(--mist)}
 
+footer{background:var(--ink);color:#c8d9d9;padding:2rem 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:#fff}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+@media(max-width:860px){
+  .hero-grid,.about,.hours-grid,.loc-grid,.team-grid,.spec-grid{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:.5rem 4%}
+  nav a{display:block;padding:.9rem 0}
+  .hdr-cta{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
-    <div class="container">
-      <a class="navbar-brand me-lg-5" href="index.html">
-        <img src="images/logo.png" alt="Logo" class="img-fluid" style="height: 120px;">
-      </a>
-  
-      <button class="navbar-toggler border-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse justify-content-lg-center" id="navbarContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item mx-lg-2">
-            <a class="nav-link px-lg-3 py-2 fw-medium text-dark border-bottom border-2 border-white hover-border-primary transition-border" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item mx-lg-2">
-            <a class="nav-link px-lg-3 py-2 fw-medium text-dark border-bottom border-2 border-white hover-border-primary transition-border" href="quemsomos.html">QUEM SOMOS</a>
-          </li>
-          <li class="nav-item mx-lg-2">
-            <a class="nav-link px-lg-3 py-2 fw-medium text-dark border-bottom border-2 border-white hover-border-primary transition-border" href="profissionais.html">PROFISSIONAIS</a>
-          </li>
-          <li class="nav-item mx-lg-2">
-            <a class="nav-link px-lg-3 py-2 fw-medium text-dark border-bottom border-2 border-white hover-border-primary transition-border" href="atendimento.html">ATENDIMENTO</a>
-          </li>
-          <li class="nav-item mx-lg-2">
-            <a class="nav-link px-lg-3 py-2 fw-medium text-dark border-bottom border-2 border-white hover-border-primary transition-border" href="ondeestamos.html">ONDE ESTAMOS</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="Clínica Ápice - início"><img src="https://www.clinicapice.com.br/images/logo.png" alt="Clínica Ápice"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#profissionais">Profissionais</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#onde-estamos">Onde estamos</a></li>
+      </ul>
+    </nav>
+    <a class="btn hdr-cta" href="https://wa.me/5535997150865">Agende agora</a>
+  </div>
+</header>
 
-    <!-- header section end -->
-    <!-- banner section start -->
-    <div class="banner_section layout_padding">
-      <div class="container-fluid">
-        <div id="my_slider" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner_taital">
-                    <h1 class="dance_text">Neurologia</h1>
-                    <p class="consectetur_text">Atendimento clínico online de adultos, com foco nas áreas de Neurologia Cognitiva e Cefaleias (Enxaqueca).</p>
-                    <div class="about_bt"><a href="quemsomos.html">QUEM SOMOS</a></div>
-                    <div class="contact_bt"><a href="profissionais.html">SABER MAIS</a></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                 <!-- <div class="image_1"><img src="images/img-1.png"></div>-->
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner_taital">
-                    <h1 class="dance_text">Psicologia</h1>
-                    <p class="consectetur_text">Psicoterapia, Avaliação psicológica.</p>
-                    <div class="about_bt"><a href="quemsomos.html">QUEM SOMOS</a></div>
-                    <div class="contact_bt"><a href="profissionais.html">SABER MAIS</a></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <!--<div class="image_1"><img src="images/img-1.png"></div>-->
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="banner_taital">
-                    <h1 class="dance_text">Neuropsicologia</h1>
-                    <p class="consectetur_text">Avaliação Neuropsicológica.</p>
-                    <div class="about_bt"><a href="quemsomos.html">QUEM SOMOS</a></div>
-                    <div class="contact_bt"><a href="profissionais.html">SABER MAIS</a></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <!--<div class="image_1"><img src="images/img-1.png"></div>-->
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-            <i class="fa fa-left"><img src="images/left-icon.png"></i>
-          </a>
-          <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-            <i class="fa fa-right"><img src="images/right-icon.png"></i>
-          </a>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>Saúde mental e neurológica, com cuidado de perto.</h1>
+        <p>Neurologia, psicologia e neuropsicologia reunidas em um só lugar, com atendimento personalizado e humanizado.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/5535997150865">Agende pelo WhatsApp</a>
+          <a class="btn ghost" href="#profissionais">Conheça a equipe</a>
         </div>
       </div>
-    </div>
-    <div class="ram">
-      <div class="border_bg"></div>
-    </div>
-    <!-- banner section end -->
-
-
-
-
-    <!-- footer section start -->
-    <div class="footer_section layout_padding" style="background-color: #333; color: #fff; padding: 20px 0;">
-      <div class="container">
-        <div class="row">
-          <!-- Address Section -->
-          <div class="col-sm-6 col-lg-4">
-        
-            <div class="map_icon" style="margin-bottom: 5px;">
-              <i class="fab fa-whatsapp" style="color: #25d366; font-size: 16px;"></i>
-              <span class="padding_left_0" style="margin-left: 10px; color: #fff;"> (35) 99715-0865<br></span>
-            </div>
-            <div class="map_icon">
-              <i class="fas fa-envelope" style="color: #f83d81; font-size: 16px;"></i>
-              <span class="padding_left_0" style="margin-left: 10px; color: #fff;">clinicaapicepsi@gmail.com</span>
-            </div>
-            <div class="map_icon" style="margin-bottom: 5px;">
-              <i class="fas fa-map-marker-alt" style="color: #f83d81; font-size: 16px;"></i>
-              <span class="padding_left_0" style="margin-left: 10px; color: #fff;">Rua Rio Grande do Sul, 408 Poços de Caldas - MG</span>
-            </div>
-          </div>
-
-          <!-- Business Hours Section -->
-          <div class="col-sm-6 col-lg-4">
-            <h1 class="address_text" style="color: #fff; font-size: 18px;">Horários de Atendimento</h1>
-            <div class="hiphop_text_1" style="color: #ccc; font-size: 14px; margin-bottom: 5px;">
-              Segunda: <span style="float: right; color: #fff;"> 8h às 12h -  14h às 18h</span>
-            </div>
-            <div class="hiphop_text_1" style="color: #ccc; font-size: 14px; margin-bottom: 5px;">
-              Terça: <span style="float: right; color: #fff;">8h às 12h -  14h às 18h</span>
-            </div>
-            <div class="hiphop_text_1" style="color: #ccc; font-size: 14px; margin-bottom: 5px;">
-              Quarta: <span style="float: right; color: #fff;">8h às 12h -  14h às 18h</span>
-            </div>
-            <div class="hiphop_text_1" style="color: #ccc; font-size: 14px; margin-bottom: 5px;">
-              Quinta: <span style="float: right; color: #fff;">8h às 12h -  14h às 18h</span>
-            </div>
-            <div class="hiphop_text_1" style="color: #ccc; font-size: 14px; margin-bottom: 5px;">
-              Sexta: <span style="float: right; color: #fff;">8h às 12h -  14h às 18h</span>
-            </div>
-          </div>
-
-          <!-- Social Media Section -->
-          <div class="col-sm-6 col-lg-4">
-            <h1 class="address_text" style="color: #fff; font-size: 18px;">Siga-nos</h1>
-            <div class="social_icon">
-              <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 10px 0;">
-                <li>
-                  <a href="#" target="_blank" style="color: #fff; font-size: 20px;">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" style="color: #fff; font-size: 20px;">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" style="color: #fff; font-size: 20px;">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="areas" aria-label="Áreas de atuação">
+        <a href="#neurologia">Neurologia <small>Cognitiva e cefaleias</small></a>
+        <a href="#psicologia">Psicologia <small>Terapia e avaliação</small></a>
+        <a href="#neuropsicologia">Neuropsicologia <small>Avaliação</small></a>
       </div>
     </div>
-    <!-- footer section end -->
+    <svg class="peak" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 L220 60 L380 75 L600 8 L760 55 L900 38 L1200 90 Z" fill="currentColor"/></svg>
+  </div>
+</section>
 
-    <!-- copyright section start -->
-    <div class="copyright_section" style="background-color: #222; color: #fff; padding: 10px 0; text-align: center;">
-      <div class="container">
-        <p style="margin: 0; font-size: 14px;">
-          © 2024 - 2025 Todos os direitos reservados - 
-          <a href="https://www.clinicapice.com.br" target="_blank" style="color: #f83d81; text-decoration: underline;">Clínica Ápice</a> 
-          
-          Design por 
-          <a href="https://www.haurivox.com.br" target="_blank" style="color: #f83d81; text-decoration: underline;">Haurivox</a>
-        </p>
-        <div style="margin-top: 10px;">
-          <a href="#" target="_blank" style="color: #fff; margin-right: 15px; font-size: 16px;">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" target="_blank" style="color: #fff; margin-right: 15px; font-size: 16px;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" target="_blank" style="color: #fff; font-size: 16px;">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
+<section id="quem-somos">
+  <div class="wrap about">
+    <div>
+      <h2>Quem somos</h2>
+      <p>Bem-vindo à Clínica Ápice, um espaço de saúde mental e neurológica que oferece atendimentos personalizados e de alta qualidade.</p>
+      <p>Nossa equipe é composta por profissionais experientes e especializados em suas áreas, garantindo um atendimento integral e humanizado.</p>
     </div>
-    <!-- copyright section end -->
+    <div>
+      <h3 style="font-size:1.3rem;margin-bottom:1rem">Nossos serviços</h3>
+      <ul class="services">
+        <li>Avaliação neuropsicológica</li>
+        <li>Psicoterapia</li>
+        <li>Atendimento clínico online</li>
+        <li>Avaliação e tratamento de condições neurológicas</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
+<section class="spec" aria-labelledby="esp">
+  <div class="wrap">
+    <h2 id="esp">Especialidades</h2>
+    <div class="spec-grid">
+      <article id="neurologia">
+        <h3>Neurologia</h3>
+        <p>Atendimento clínico online de adultos, com foco em Neurologia Cognitiva e Cefaleias (Enxaqueca).</p>
+        <a class="tag" href="#profissionais">Saiba mais sobre o médico</a>
+      </article>
+      <article id="psicologia">
+        <h3>Psicologia</h3>
+        <p>Psicoterapia e avaliação psicológica.</p>
+        <a class="tag" href="#profissionais">Saiba mais sobre a psicóloga</a>
+      </article>
+      <article id="neuropsicologia">
+        <h3>Neuropsicologia</h3>
+        <p>Avaliação neuropsicológica de memória, atenção, linguagem, raciocínio e funções executivas.</p>
+        <a class="tag" href="#profissionais">Saiba mais sobre a psicóloga</a>
+      </article>
+    </div>
+  </div>
+</section>
 
+<section id="profissionais">
+  <div class="wrap">
+    <h2>Nossa equipe</h2>
+    <p>Conheça nossos profissionais experientes e especializados, comprometidos em oferecer o melhor cuidado e atendimento.</p>
+    <div class="team-grid">
+      <article class="card a">
+        <h3>Héverton Barbosa de Freitas</h3>
+        <p class="role">Médico neurologista</p>
+        <p class="reg">CRM MG 42129 · RQE 56713</p>
+        <p>Médico com mais de 20 anos de experiência, especializado no atendimento clínico de adultos, com foco em <strong>Neurologia Cognitiva</strong> e <strong>Cefaleias (Enxaqueca)</strong>.</p>
+        <p>Desde 2022, dedica-se também ao estudo e à aplicação da <strong>Endocanabinologia</strong>, explorando o uso terapêutico de canabinoides medicinais para promover bem-estar e saúde.</p>
+      </article>
+      <article class="card b">
+        <h3>Lidianne Bindez de Andrade</h3>
+        <p class="role">Psicóloga</p>
+        <p class="reg">CRP 04/73319</p>
+        <p>Atua em psicoterapia e em avaliação psicológica e neuropsicológica. É especialista na investigação detalhada do funcionamento cognitivo, comportamental e emocional, com testes padronizados e entrevistas para analisar memória, atenção, linguagem, raciocínio lógico e funções executivas.</p>
+        <p>A avaliação neuropsicológica ajuda a identificar dificuldades cognitivas, apoia diagnósticos neurológicos ou psiquiátricos e permite criar estratégias personalizadas, promovendo qualidade de vida e desempenho no dia a dia.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
+<section class="hours" id="atendimento">
+  <div class="wrap hours-grid">
+    <div>
+      <h2>Horários de atendimento</h2>
+      <p>Nossa clínica está aberta para atendê-lo em horários convenientes. Confira nossa disponibilidade e agende sua consulta.</p>
+      <p style="margin-top:1.5rem"><a class="btn" href="https://wa.me/5535997150865">Agende agora</a></p>
+    </div>
+    <ul class="days" id="days">
+      <li data-d="1"><span>Segunda-feira</span><span>8h às 12h · 14h às 18h</span></li>
+      <li data-d="2"><span>Terça-feira</span><span>8h às 12h · 14h às 18h</span></li>
+      <li data-d="3"><span>Quarta-feira</span><span>8h às 12h · 14h às 18h</span></li>
+      <li data-d="4"><span>Quinta-feira</span><span>8h às 12h · 14h às 18h</span></li>
+      <li data-d="5"><span>Sexta-feira</span><span>8h às 12h · 14h às 18h</span></li>
+      <li class="off"><span>Sábado e domingo</span><span>Fechado</span></li>
+    </ul>
+  </div>
+</section>
 
+<section id="onde-estamos">
+  <div class="wrap loc-grid">
+    <div>
+      <h2>Onde estamos</h2>
+      <address class="contact">
+        <div><b>Endereço</b>Rua Rio Grande do Sul, 408<br>Poços de Caldas - MG</div>
+        <div><b>Telefone e WhatsApp</b><a href="https://wa.me/5535997150865">(35) 99715-0865</a></div>
+        <div><b>E-mail</b><a href="mailto:clinicaapicepsi@gmail.com">clinicaapicepsi@gmail.com</a></div>
+      </address>
+      <p style="margin-top:1.5rem"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rua+Rio+Grande+do+Sul+408+Po%C3%A7os+de+Caldas+MG">Abrir no Google Maps</a></p>
+    </div>
+    <iframe title="Mapa da Clínica Ápice" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Rio+Grande+do+Sul+408+Po%C3%A7os+de+Caldas+MG&output=embed"></iframe>
+  </div>
+</section>
+</main>
 
-    <a href="https://wa.me/5535997150865" target="_blank" style="text-decoration: none;">
-      <div style="position: fixed; bottom: 20px; left: 20px; background-color: #25D366; border-radius: 50px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 10px;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; height: 30px;">
-        <span style="color: white; font-size: 16px; font-weight: bold;">Agende Agora</span>
-      </div>
-    </a>
-    
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript --> 
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+  <div class="wrap">
+    <span>© 2024 - 2026 Todos os direitos reservados · <a href="https://www.clinicapice.com.br">Clínica Ápice</a></span>
+    <span>Rua Rio Grande do Sul, 408 · Poços de Caldas - MG</span>
+  </div>
+</footer>
+
+<a class="btn wa" href="https://wa.me/5535997150865" aria-label="Agende pelo WhatsApp">WhatsApp · Agende agora</a>
+
+<script>
+  var d=new Date().getDay(), li=document.querySelector('#days li[data-d="'+d+'"]');
+  if(li){li.classList.add('today');li.firstElementChild.textContent+=' (hoje)'}
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+</script>
 </body>
 </html>

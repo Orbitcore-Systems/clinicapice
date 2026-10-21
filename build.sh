@@ -1,11 +1,13 @@
 #!/bin/bash
 
-VERSION=1
-MINOR=2
+VERSION=2
+MINOR=0
 PATCH=0
 EXTRAVERSION=""
 
-NOTES="Atualizado data e quem desenhou o site"
+NOTES="Site Refeito Totalmente do zero!,
+
+Assited-by: Claude:5.5 Sonnet [Anthropic]"
 BRANCH="main"
 
 set -e
